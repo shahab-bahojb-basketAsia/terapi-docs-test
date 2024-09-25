@@ -33,26 +33,15 @@ Need help getting started? Get help in the [community](https://terapi.dev/slack)
     const connection = await terapi.getConnection();
 
     let api_key: string;
-    if ('apiKey' in connection.credentials) {
-        api_key = connection.credentials.apiKey;
-    } else {
-        throw new terapi.ActionError({
-            message: `API key credentials is incomplete`
-        });
+    if ('apiKey' in connection.credentials)  else );
     }
 
-    const postData = {
-        api_key: api_key,
-        campaign_id: input.campaign_id,
-        name: input.name
-    };
+    const postData = ;
 
-    const resp = await terapi.post({
-        endpoint: `/v1/campaign/set/name`,
-        data: postData
-    });
+    const resp = await terapi.post();
     ```
 - You can have a look at the following simple [action template](/integrations/integration-templates/instantly) based on the [Instantly Set campaign name action](https://app.theneo.io/instantly-ai/instantlyapidocs/campaign-1/set-campaign-name).
 - Instantly enforces a general rate limit of 10 requests per second. For more details, check [Instantly rate limits](https://app.theneo.io/instantly-ai/instantlyapidocs/introduction/rate-limits).
 
 Add Getting Started links and Gotchas by [editing this page]()
+

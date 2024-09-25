@@ -33,7 +33,7 @@ Gorgias requires a user-specific subdomain to run OAuth.
 You should request this from the user and pass it to Terapi in the `terapi.auth()` call:
 
 ```js
-terapi.auth('gorgias', '', );
+terapi.auth('gorgias', '', });
 ```
 
 Add Connection configuration in Terapi by [editing this page](/integrate/guides/connect-an-api).

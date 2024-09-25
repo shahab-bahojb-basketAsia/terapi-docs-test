@@ -57,3 +57,4 @@ Nango templates are designed to simplify and accelerate your integration develop
 
 **Questions, problems, feedback?** Please reach out in the [Slack community](https://nango.dev/slack).
 
+

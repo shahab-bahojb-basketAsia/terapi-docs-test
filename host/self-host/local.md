@@ -18,3 +18,4 @@ Check out the `.env.example` file for all configuration options.
 Terapi uses the following ports (all overridable with `docker-compose.yaml` or env vars): 
 - Server: 3003
 - Postgres: 5432
+

@@ -148,3 +148,4 @@ To host an Elasticsearch cluster you have multiple solutions:
 We don't provide alternative storage for the moment.
 If `TERAPI_LOGS_ENABLED` is `false`, all the logs are sent to stdout so you can always find everything in your hosts logs UI.
 
+

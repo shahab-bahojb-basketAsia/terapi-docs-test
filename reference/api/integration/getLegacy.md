@@ -5,26 +5,13 @@ openapi: 'GET /config/'
 
 
   ```json Example Response
-{
-  "config": {
-    "unique_key": "slack-nango-community",
-    "provider": "slack",
-    "syncs": [
-        {
-            "name": "slack-messages",
-            "created_at": "2023-10-16T08:45:26.241Z",
-            "updated_at": "2023-10-16T08:45:26.241Z",
-            "description": "Continuously fetch the latest Slack messages. Details: full refresh. Required scopes(s): channels:read, groups:read, mpim:read, im:read"
-        }
+
     ],
     "actions": [
-        {
-            "name": "github-list-repos-action",
-            "created_at": "2023-10-17T17:28:03.839Z",
-            "updated_at": "2023-10-17T17:28:03.839Z"
-        }
+        
     ]
   }
 }
   ```
+
 

@@ -54,9 +54,7 @@ import type  from '../../models';
 
 export default async function runAction(
     nango: NangoAction, 
-    input: ParameterModel): Promise {
-    // Your integration code goes here.
-}
+    input: ParameterModel): Promise 
 ```
 
 The `runAction` function kicks off when an action is triggered. It takes inputs from the trigger API/SDK request and returns outputs in the response. The `ParameterModel` and `ResponseModel` are configurable via the [integration configuration](/understand/concepts/scripts#integration-configuration) and are auto-imported into your integration script.

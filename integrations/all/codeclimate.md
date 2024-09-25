@@ -32,3 +32,4 @@ If you have any questions, our community is ready to assist you.
 - CodeClimate applies a rate limit of 5,000 requests per token per hour.
 
 Add Getting Started links and Gotchas by editing this page.
+

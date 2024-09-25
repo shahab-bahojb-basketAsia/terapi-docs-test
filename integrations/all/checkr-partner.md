@@ -36,18 +36,9 @@ Need assistance getting started? Visit our community for help.
 ```js
         const connection = await terapi.getConnection();
         let access_token: string;
-        if ('access_token' in connection.credentials) {
-            access_token = connection.credentials.access_token;
-        } else {
-            throw new terapi.ActionError({
-                message: `access_token is missing`
-            });
+        if ('access_token' in connection.credentials)  else );
         }
-        const config = {
-            endpoint: '/v1/account',
-            headers: {
-                Authorization: 'Basic ' + Buffer.from(access_token + ':').toString('base64')
-            }
+        const config = 
         }
 
         const response = await terapi.get(config);

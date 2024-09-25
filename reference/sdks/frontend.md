@@ -58,9 +58,7 @@ You store end-user credentials with the `nango.auth` method. It creates a [conne
 For OAuth, this will open a modal to let the user log in to their external account.
 
 ```js
-const result = await nango.auth('', '').catch((error) => {
-...
-});
+const result = await nango.auth('', '').catch((error) => );
 ```
 
 
@@ -70,11 +68,8 @@ const result = await nango.auth('', '').catch((error) => {
 For API key authorization, pass the end-user's previously-collected API key directly in the parameters.
 
 ```js
-const result = await nango.auth('', '', {
-    credentials: 
-}).catch((error) => {
-    ...
-});
+const result = await nango.auth('', '', 
+}).catch((error) => );
 ```
 
 
@@ -84,11 +79,8 @@ const result = await nango.auth('', '', {
 For Basic Auth, pass the end-user's previously-collected username & password in the parameters.
 
 ```js
-const result = nango.auth('', '', {
-    credentials: 
-}).catch((error) => {
-    ...
-});
+const result = nango.auth('', '', 
+}).catch((error) => );
 ```
 
 

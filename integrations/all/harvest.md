@@ -32,3 +32,4 @@ Need help getting started? Get help in the [community]().
 - Harvest enforces different rate limits for different endpoints. For more details check [harvest rate limits](https://help.getharvest.com/api-v2/introduction/overview/general/#rate-limiting)
 
 Add Getting Started links and Gotchas by [editing this page]().
+

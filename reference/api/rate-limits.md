@@ -11,3 +11,4 @@ Those headers are sent back with every API response:
 
 If a client exceeds the rate limit, the API will respond with a 429 `Too Many Requests` status code. In this case, the `Retry-After` header is included, indicating the number of seconds the client should wait before making another request to avoid being rate-limited.
 
+

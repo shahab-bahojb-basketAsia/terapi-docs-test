@@ -31,3 +31,4 @@ Do you need help? Please check this link.
 -   If you encounter `The required parameter client_id is missing or invalid`, you may need to navigate to Developer Console -> Your app -> Manage distribution and switch from "Specific workspaces" to "Any workspace".
 
 Add Getting Started links and Gotchas by editing this page.
+

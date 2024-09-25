@@ -29,3 +29,4 @@ Find solutions quickly by joining our vibrant developer community.
 - Circle.so uses `API_KEY` auth mode where `Authorization: Token APIkey` is passed to the request header for Authentication.
 
 Add Getting Started links and Gotchas by editing this page.
+

@@ -21,11 +21,7 @@ terapi.auth('provider-name', 'user-identifier');
 Retrieve structured data from external APIs in your backend:
 
 ```ts
-terapi.fetchData({
-    provider: 'provider-name',
-    userId: 'user-identifier',
-    dataModel: 'DesiredDataType',
-});
+terapi.fetchData();
 ```
 
 # 🛠️ Flexible Integration Options

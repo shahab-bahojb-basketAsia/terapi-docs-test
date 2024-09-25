@@ -61,3 +61,4 @@ If you are interested in the paid self-hosting version, please get in touch with
 
 **Questions, problems, feedback?** Please reach out in the [Slack community](https://terapi.dev/slack).
 
+

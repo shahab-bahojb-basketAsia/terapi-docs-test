@@ -30,3 +30,4 @@ Need assistance getting started? Visit the [community](#).
 - Handle API rate limits as per Freshservice's documentation.
 
 Add Getting Started links and Gotchas by [editing this page](#).
+

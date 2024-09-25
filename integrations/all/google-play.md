@@ -31,3 +31,4 @@ Need help getting started? Get help in the [community]().
 -   Please note that the Google Play APIs have various scopes for different versions, such as viewing and managing your Google Play Developer account or managing corporate Android devices. Refer to the specific API [documentation](https://developers.google.com/identity/protocols/oauth2/scopes#androidpublisher) for the required scopes for each version.
 
 Add Getting Started links and Gotchas by [editing this page]().
+

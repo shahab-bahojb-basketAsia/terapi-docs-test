@@ -28,3 +28,4 @@ Need help getting started? Get help in the [community](https://terapi.dev/slack)
 - Holded uses `API_KEY` auth mode where `key`: `API key` is passed to the request header for Authentication.
 
 Add Getting Started links and Gotchas by [editing this page]()
+

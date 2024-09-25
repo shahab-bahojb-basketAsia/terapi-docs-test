@@ -29,3 +29,4 @@ Do you need help? Please check this link.
 - Apollo uses API_KEY authentication mode with query param: Param `api_token` in the request URL to access different endpoints.
 
 Add Getting Started links and Gotchas by editing this page.
+

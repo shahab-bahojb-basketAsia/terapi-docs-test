@@ -33,3 +33,4 @@ Have questions? Our community is here to help you navigate any issues!
 - Rate limits and upload restrictions vary depending on your subscription plan. You can find more information on these limits in the [Fireflies documentation](https://docs.fireflies.ai/fundamentals/limits).
 
 Add any additional links or gotchas by editing this page.
+

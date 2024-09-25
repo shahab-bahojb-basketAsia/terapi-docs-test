@@ -30,3 +30,4 @@ If you're stuck or need advice, check out our community for support.
 - Dialpad applies different rate limits based on the specific API endpoints. For further details, refer to the [Dialpad rate limits](https://developers.dialpad.com/docs/rate-limits) documentation.
 
 Add Getting Started links and Gotchas by editing this page.
+

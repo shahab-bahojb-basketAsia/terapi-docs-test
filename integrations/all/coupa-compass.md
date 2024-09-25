@@ -27,7 +27,8 @@ Need additional features? Let us know, and we can add them within 48 hours throu
 If you need help getting started, visit our community for support.
 
 ## API gotchas
-- Each Coupa Compass instance has its own unique base URL in the format ``.
+- Each Coupa Compass instance has its own unique base URL in the format `.coupahost.com`, such as `companyname.coupahost.com`. This is known as the ``.
 - Coupa Compass provides various APIs, each with different base URLs. Be sure to check which API you are using. For example, the CSO API uses `cso.coupahost.com/api/`, while the Coupa Core API uses `/api`.
 
 Add Getting Started links and Gotchas by editing this page.
+

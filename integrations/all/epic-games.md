@@ -31,3 +31,4 @@ Struggling to get started? Our community is here to help!
 -   When you receive the access token, Epic Games includes additional details (like user data). You can use Terapi's `getRawTokenResponse` method to retrieve this information. For more advanced info, inspect the access token to access [extra data](https://dev.epicgames.com/docs/web-api-ref/authentication#account-information).
 
 Add Getting Started links and Gotchas by [editing this page](https://github.com/terapihq/terapi/tree/master/docs-v2/integrations/all/epic-games.mdx)
+

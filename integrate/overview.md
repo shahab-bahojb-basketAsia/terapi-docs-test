@@ -23,10 +23,7 @@ const connectionId = 'user123';
 // Shows authorization popup to the user.
 const result = await terapi.auth(integrationId, connectionId);
 
-if (result.ok) {
-    // The auth flow succeeded. The integration is set up!
-    saveToDatabase(connectionId, integrationId);
-}
+if (result.ok) 
 ```
 
 
@@ -38,11 +35,7 @@ When a new user connects your integration, Terapi automatically starts fetching 
 Terapi uses webhooks to notify your backend when external user data has been added, updated or deleted. Terapi will only alert you when there are actual changes.
 
 ```json Backend: Webhook payload with new data
-{
-    "connectionId": "user123",
-    "providerConfigKey": "zendesk",
-    "model": "ticket",
-    "responseResults": ,
+,
     "modifiedAfter": "2023-05-31T11:46:13.390Z"
 }
 ```
@@ -56,12 +49,7 @@ Terapi returns the data in the schema of your choice, which can be standardized 
 You can directly save this data to your database, or process it further, as needed.
 
 ```ts Backend: Fetch & save new records.
-const records = await terapi.listRecords({
-    providerConfigKey: 'zendesk',
-    connectionId: 'user123',
-    model: 'ticket',
-    modifiedAfter: modifiedAfter
-});
+const records = await terapi.listRecords();
 
 saveToDatabase(records);
 ```
@@ -75,11 +63,7 @@ Push updates back to external APIs in a way that is:
 - **Customizable:** Support intricate workflows and composed API calls.
 
 ```ts Backend: Write back to external APIs.
-const result = await terapi.triggerAction({
-    providerConfigKey: 'zendesk',
-    connectionId: 'user123',
-    action: 'create-ticket',
-    input: 
+const result = await terapi.triggerAction(
 });
 ```
 

@@ -30,3 +30,4 @@ Need help getting started? Get help in the [community](https://terapi.dev/slack)
 -   Keap only has the scope _`full`_ as the possible scope to use.
 
 Add Getting Started links and Gotchas by [editing this page]()
+

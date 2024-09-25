@@ -30,3 +30,4 @@ Do you need help? Please check this link.
 - For Basic auth, Amplitude uses the API Key as the username and the Secret Key as the password.
 
 Add Getting Started links and Gotchas by editing this page.
+

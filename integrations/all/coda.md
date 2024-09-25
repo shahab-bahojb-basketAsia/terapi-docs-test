@@ -29,3 +29,4 @@ Stuck or have questions? Our community is here to support you along the way.
 - To authenticate with Coda's API, use `API_KEY` mode by including `Authorization: Bearer api_token` in the request headers for proper access to the endpoints.
 
 Add Getting Started links and Gotchas by editing this page.
+

@@ -46,3 +46,4 @@ Need help getting started? Get help in the [community](#).
 -   Terapi supports initiating a connection with a GitHub App using the frontend SDK, but not directly from the [GitHub Marketplace](https://github.com/marketplace). Therefore, you should encourage users to install your GitHub App from your product, rather than from the GitHub Marketplace directly. This is a limitation we plan to fix in the future.
 
 Add Getting Started links and Gotchas by [editing this page](#).
+

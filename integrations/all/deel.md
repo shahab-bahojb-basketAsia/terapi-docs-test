@@ -31,3 +31,4 @@ Looking for guidance? Connect with our community to get the help you need.
 - Deel provides separate environments for sandbox and production testing. We have two different configurations: use `deel-sandbox` for sandbox and `deel` for the production environment when creating your integrations.
 
 Add Getting Started links and Gotchas by editing this page.
+

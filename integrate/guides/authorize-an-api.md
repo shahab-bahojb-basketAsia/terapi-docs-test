@@ -85,12 +85,8 @@ For OAuth, the `terapi.auth()` method will trigger the OAuth flow in a popup, to
 ```js
 terapi
     .auth('', '')
-    .then((result) => {
-        // Show success UI.
-    })
-    .catch((error) => {
-        // Show failure UI.
-    });
+    .then((result) => )
+    .catch((error) => );
 ```
 
 
@@ -101,17 +97,10 @@ For API keys, the `terapi.auth()` method is used to store the end-user's API key
 
 ```js
 terapi
-    .auth('', '', {
-        credentials: {
-            apiKey: ''
-        }
+    .auth('', '', 
     })
-    .then((result) => {
-        // Show success UI.
-    })
-    .catch((error) => {
-        // Show failure UI.
-    });
+    .then((result) => )
+    .catch((error) => );
 ```
 
 
@@ -122,18 +111,10 @@ For Basic Auth, the `terapi.auth()` method is used to store the end-user's usern
 
 ```js
 terapi
-    .auth('', '', {
-        credentials: {
-            username: '',
-            password: ''
-        }
+    .auth('', '', 
     })
-    .then((result) => {
-        // Show success UI.
-    })
-    .catch((error) => {
-        // Show failure UI.
-    });
+    .then((result) => )
+    .catch((error) => );
 ```
 
 
@@ -159,17 +140,7 @@ To set this up:
 
 Terapi webhooks are post requests with the following JSON body:
 ```json
-{
-    "type": "auth",
-    "connectionId": "",
-    "authMode": "OAUTH1|OAUTH2|OAUTH2_CC|BASIC|API_KEY|APP_STORE|CUSTOM|APP|NONE|TBA",
-    "providerConfigKey": "",
-    "provider": "",
-    "environment": "dev" | "prod",
-    "success": true | false,
-    "operation": "creation" | "override" | "unknown",
-    "error": ""
-}
+
 ```
 
 For each successful authorization attempt, persist the connection ID & integration ID in your database. You will need them to retrieve the connection credentials later.
@@ -189,16 +160,14 @@ For example, Zendesk has the following authorization URL, where the subdomain is
 For these cases, you must provide this configuration when calling `terapi.auth()` ([reference]()):
 
 ```js
-terapi.auth('zendesk', '', {
-    params: 
+terapi.auth('zendesk', '', 
 });
 ```
 
 In some cases you might want to override the scopes provided by an integration at the connection level. For this case you can pass in the scopes to `terapi.auth`:
 
 ```js
-terapi.auth('zendesk', '', {
-    params: 
+terapi.auth('zendesk', '', 
 });
 ```
 
@@ -220,4 +189,5 @@ If you are self-hosting Terapi, follow the instructions [here]() to change your 
 
 
 **Questions, problems, feedback?** Please reach out in the Slack community.
+
 

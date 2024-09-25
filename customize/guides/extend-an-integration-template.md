@@ -37,3 +37,4 @@ If a custom integration script shares the same name as a template, your custom v
 
 For assistance or feedback, don't hesitate to reach out to our community support channels.
 
+

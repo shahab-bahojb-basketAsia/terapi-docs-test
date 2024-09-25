@@ -15,10 +15,7 @@ In your app:
 
 The output of this step should be a field mapping object such as: 
 ```json
- {
-    "internal_field_1": "custom_field_1",
-    ...
- }
+ 
 ```
 
 # Store field mappings in the connection metadata
@@ -63,11 +60,7 @@ curl --request POST \
   --url https://api.terapi.dev/sync/start \
   --header 'Authorization: Bearer ' \
   --header 'Content-Type: application/json' \
-  --data '{
-  "connection_id": "",
-  "provider_config_key": "",
-  "syncs": [ "hubspot-sync" ]
-}'
+  --data ''
 ```
 
 
@@ -76,4 +69,5 @@ The sync's internal logic will use the field mappings to fetch the relevant data
 
 
 **Questions, problems, feedback?** Please reach out in the Slack community.
+
 

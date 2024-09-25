@@ -30,3 +30,4 @@ Do you need help? Please check this link.
 - Algolia uses API_KEY authentication mode with `X-Algolia-API-Key: API_KEY` and `X-Algolia-Application-Id: APP_ID` in the request header to access different endpoints.
 
 Add Getting Started links and Gotchas by editing this page.
+

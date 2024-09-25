@@ -30,3 +30,4 @@ Need assistance getting started? Visit our community for support.
 -   Checkout.com uses client credentials to authorize applications instead of individual users.
 
 Add Getting Started links and Gotchas by editing this page.
+

@@ -29,3 +29,4 @@ Need assistance getting started? Visit our community for help.
 - Chorus requires `Basic` authentication to interact with its API endpoints. You will need to provide your `username` and `password` for access.
 
 Add Getting Started links and Gotchas by editing this page.
+

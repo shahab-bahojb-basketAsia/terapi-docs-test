@@ -29,3 +29,4 @@ Need help getting started? Get help in the [community](https://terapi.dev/slack)
 -   While setting up the OAuth app, use the `https://mail.google.com/` scope for extended capabilities.
 
 Add Getting Started links and Gotchas by [editing this page](https://terapi.dev/docs-v2/integrations/all/google-mail.mdx)
+

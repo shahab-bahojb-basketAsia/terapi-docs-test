@@ -32,3 +32,4 @@ If you need assistance during setup, check out the community forum for helpful r
 -   Factorial primarily offers two OAuth scopes: `read` and `write`. Be mindful when selecting the appropriate scope for your integration.
 
 Contribute to this page by adding additional Gotchas or Getting Started links!
+

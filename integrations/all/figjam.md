@@ -33,3 +33,4 @@ If you run into issues, you can always check out the community for help and reso
 -   Figjam's API allows only one scope, which is `file_read`. Be aware of this when setting up your OAuth.
 
 Add Getting Started links and Gotchas by editing this page.
+

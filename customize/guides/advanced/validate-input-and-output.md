@@ -33,3 +33,4 @@ For more advanced use cases, you can generate your own validation schemas using 
 JSON Schema is supported in most major programming languages. Here's a non-exhaustive list of how you can directly use this file to validate the records you receive from Terapi.
 
 [Code examples for different languages omitted for brevity]
+

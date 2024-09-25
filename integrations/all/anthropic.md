@@ -32,3 +32,4 @@ Do you need help? Please check this link.
 - When creating a new connection in Terapi, you will also need to specify the API version, which can be found under [Anthropic versions](https://docs.anthropic.com/en/api/versioning)
 
 Add Getting Started links and Gotchas by editing this page.
+

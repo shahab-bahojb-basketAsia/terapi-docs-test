@@ -10,3 +10,4 @@ Nango uses the request body as the new metadata (it must be a JSON object). Note
 ## Fetching _connection metadata_
 
 To read the existing metadata of a _connection_, simply fetch the connection. Your custom metadata is included as part of the returned connection object.
+

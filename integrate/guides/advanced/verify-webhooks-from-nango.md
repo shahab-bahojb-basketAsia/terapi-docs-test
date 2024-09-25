@@ -18,7 +18,7 @@ The webhook signature can be generated with the following code:
 import crypto from 'crypto';
 
 const secretKeyDev = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx';
-const signature = `$`;
+const signature = `$$`;
 const hash = crypto.createHash('sha256').update(signature).digest('hex');
 ```
 
@@ -44,16 +44,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import javax.xml.bind.DatatypeConverter;
 
-public class Main {
-    public static void main(String[] args) throws NoSuchAlgorithmException {
-        String secretKeyDev = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
-        String payloadString = // convert payload to JSON string
-        String signature = secretKeyDev + payloadString;
-
-        MessageDigest digest = MessageDigest.getInstance("SHA-256");
-        byte[] hashBytes = digest.digest(signature.getBytes("UTF-8"));
-        String hash = DatatypeConverter.printHexBinary(hashBytes).toLowerCase();
-    }
+public class Main 
 }
 ```
 
@@ -66,7 +57,7 @@ require 'json'
 require 'digest'
 
 secret_key_dev = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
-signature = "#"
+signature = "##"
 hash = Digest::SHA256.hexdigest(signature)
 ```
 
@@ -83,14 +74,7 @@ import (
     "encoding/json"
 )
 
-func main() {
-    secretKeyDev := "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-    payloadString, _ := json.Marshal(payload) // Handle error in real code
-    signature := secretKeyDev + string(payloadString)
-
-    hash := sha256.Sum256([]byte(signature))
-    hexHash := hex.EncodeToString(hash[:])
-}
+func main() 
 ```
 
 
@@ -125,3 +109,4 @@ $hash = hash('sha256', $signature);
 
 
 Only accept a webhook if the `X-Terapi-Signature` header value matches the webhook signature.
+

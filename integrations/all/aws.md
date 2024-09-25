@@ -32,3 +32,4 @@ AWS uses different domain extension codes for different regions, such as `us-eas
 ## API gotchas
 
 Add Getting Started links and Gotchas by editing this page.
+

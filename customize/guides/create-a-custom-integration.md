@@ -93,9 +93,7 @@ Open the generated sync script (named `[sync-name].ts`) which should contain the
 ```typescript salesforce-contacts.ts
 import type  from '../../models';
 
-export default async function fetchData(terapi: TerapiSync): Promise {
-	// Integration code goes here.
-}
+export default async function fetchData(terapi: TerapiSync): Promise 
 ```
 
 Fill in the `fetchData` method with your integration code (in the example here, we fetch tasks from Salesforce):
@@ -103,53 +101,28 @@ Fill in the `fetchData` method with your integration code (in the example here, 
 ```ts salesforce-contacts.ts
 import type  from '../../models';
 
-export default async function fetchData(terapi: TerapiSync): Promise {
-    const query = buildQuery(terapi.lastSyncDate);
-    await fetchAndSaveRecords(terapi, query);
-    await terapi.log('Sync run completed!');
-}
+export default async function fetchData(terapi: TerapiSync): Promise 
 
-function buildQuery(lastSyncDate?: Date): string {
-    let baseQuery = `SELECT Id, FirstName, LastName, Email, AccountId, LastModifiedDate FROM Contact`;
-
-    if (lastSyncDate) { // Only fetch the new data.
-        baseQuery += ` WHERE LastModifiedDate > $`;
+function buildQuery(lastSyncDate?: Date): string `;
     }
 
     return baseQuery;
 }
 
-async function fetchAndSaveRecords(terapi: TerapiSync, query: string) {
-    let endpoint = '/services/data/v53.0/query';
-
-    while (true) {
-        const response = await terapi.get({
-            endpoint: endpoint,
-            params: endpoint === '/services/data/v53.0/query' ? 
+async function fetchAndSaveRecords(terapi: TerapiSync, query: string)  : 
         });
 
         const mappedRecords = mapContacts(response.data.records);
 
         await terapi.batchSave(mappedRecords, 'SalesforceContact'); // Saves records to Terapi cache.
 
-        if (response.data.done) {
-            break;
-        }
+        if (response.data.done) 
 
         endpoint = response.data.nextRecordsUrl;
     }
 }
 
-function mapContacts(records: any[]): SalesforceContact[] {
-    return records.map((record: any) => {
-        return {
-            id: record.Id as string,
-            first_name: record.FirstName,
-            last_name: record.LastName,
-            email: record.Email,
-            account_id: record.AccountId,
-            last_modified_date: record.LastModifiedDate
-        };
+function mapContacts(records: any[]): SalesforceContact[] ;
     });
 }
 ```
@@ -171,9 +144,7 @@ Open the generated action script (named `[action-name].ts`) which should contain
 ```typescript salesforce-contact-fields.ts
 import type  from '../../models';
 
-export default async function runAction(terapi: TerapiAction): Promise {
-    // Integration code goes here.
-}
+export default async function runAction(terapi: TerapiAction): Promise 
 ```
 
 Fill in the `runAction` method with your integration code (in the example here, we fetch available contact fields from Salesforce):
@@ -181,42 +152,21 @@ Fill in the `runAction` method with your integration code (in the example here, 
 ```ts salesforce-contact-fields.ts
 import type  from '../../models';
 
-export default async function runAction(terapi: TerapiAction): Promise {
-    try {
-        const response = await terapi.get({
-            endpoint: '/services/data/v51.0/sobjects/Contact/describe'
-        });
+export default async function runAction(terapi: TerapiAction): Promise );
 
         await terapi.log('Salesforce fields fetched!');
 
         const  = response;
         const  = data;
 
-        return {
-            fields: mapFields(fields)
-        };
-    } catch (error: any) {
-        throw new terapi.ActionError({
-            message: 'Failed to fetch fields in the runAction call',
-            details: {
-                message: error?.message,
-                method: error?.config?.method,
-                url: error?.config?.url,
-                code: error?.code
-            }
+        return ;
+    } catch (error: any) 
         });
     }
 }
 
-function mapFields(fields: any) {
-    return fields.map((field) => {
-        const  = field;
-        return {
-            name,
-            label,
-            type,
-            relationshipName: relationshipName as string
-        };
+function mapFields(fields: any)  = field;
+        return ;
     });
 }
 ```
@@ -266,4 +216,5 @@ Learn more about [scripts](/understand/concepts/scripts).
 
 
 **Questions, problems, feedback?** Please reach out in the [Slack community](https://terapi.dev/slack).
+
 

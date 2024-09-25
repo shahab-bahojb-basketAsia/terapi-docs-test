@@ -34,3 +34,4 @@ Need assistance getting started? Visit the [community](https://terapi.dev/slack)
 - Both `helpscout-docs` and `helpscout-mailbox` enforce different rate limits based on your current plan. For more details, check the rate limiting guidelines for [HelpScout Docs](https://developer.helpscout.com/docs-api/#rate-limiting) and [HelpScout Mailbox](https://developer.helpscout.com/mailbox-api/overview/rate-limiting/).
 
 Add Getting Started links and Gotchas by [editing this page]()
+

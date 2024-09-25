@@ -32,4 +32,5 @@ Accelo [requires a user specific subdomain](https://api.accelo.com/docs/#oauth2-
 You should request this from the user and pass it to Terapi in the `terapi.auth()` call:
 
 ```js
-terapi.auth('accelo', '', );
+terapi.auth('accelo', '', });
+

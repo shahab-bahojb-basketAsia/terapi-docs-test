@@ -32,4 +32,5 @@ Amazon uses different domain extensions for various regions. For example, `amazo
 You should provide the domain extension to Terapi in the `terapi.auth()` call:
 
 ```js
-terapi.auth('amazon', '', );
+terapi.auth('amazon', '', });
+

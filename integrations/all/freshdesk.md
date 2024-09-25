@@ -29,13 +29,7 @@ Need assistance getting started? Visit the [community](#).
 - Freshdesk requires a user-specific subdomain for API requests.
 - You should request this from the user and pass it to Terapi in the `terapi.auth()` call:
   ```js
-  terapi.auth('freshdesk', '', {
-      params: {
-          subdomain: ''
-      },
-      credentials: {
-              username: '',
-              password: 'x' // freshdesk asks you to leave "x" here
-      }});
+  terapi.auth('freshdesk', '', ,
+      credentials: });
 ```
     

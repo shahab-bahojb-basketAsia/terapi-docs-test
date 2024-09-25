@@ -30,3 +30,4 @@ Do you need help? Please check this link.
 - When creating a new connection on Terapi, please provide the `avalaraClient`, which can help you diagnose and resolve issues with your software when used appropriately. This value is a combination of `(app name); (app version); (library name); (library version); (machine name)`. For more details, refer to [Client Headers](https://developer.avalara.com/avatax/client-headers/)
 
 Add Getting Started links and Gotchas by editing this page.
+

@@ -7,3 +7,4 @@ Use the Nango Secret Key available in your [Environment Settings](https://app.na
 ```
 Authorization: Bearer 
 ```
+

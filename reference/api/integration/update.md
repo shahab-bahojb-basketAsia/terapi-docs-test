@@ -11,11 +11,8 @@ Only integrations using OAuth 1 & 2 can be updated, not integrations using API k
 
 
 ```json Example Response
-{
-  "config": {
-    "unique_key": "slack-nango-community",
-    "provider": "slack"
-  }
+
 }
 ```
+
 

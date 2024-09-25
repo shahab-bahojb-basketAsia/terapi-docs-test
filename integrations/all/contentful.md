@@ -33,3 +33,4 @@ Looking for help? Check out our community for support and insights.
 - Each API type has its own rate limits. For example, the [Content Delivery API rate limit](https://www.contentful.com/developers/docs/references/content-delivery-api/#/introduction/api-rate-limits) varies from other APIs. Make sure to review the specific rate limits for the API you're using.
 
 Add Getting Started links and Gotchas by editing this page.
+

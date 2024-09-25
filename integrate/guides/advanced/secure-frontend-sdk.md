@@ -50,22 +50,7 @@ import javax.crypto.spec.SecretKeySpec;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 
-public class Main {
-    public static void main(String[] args) throws NoSuchAlgorithmException, InvalidKeyException {
-        String hmacKey = "";
-        String message = ":";
-
-        Mac hmac = Mac.getInstance("HmacSHA256");
-        SecretKeySpec secret_key = new SecretKeySpec(hmacKey.getBytes(), "HmacSHA256");
-        hmac.init(secret_key);
-
-        byte[] digestBytes = hmac.doFinal(message.getBytes());
-        StringBuilder hexString = new StringBuilder();
-        for (byte b : digestBytes) {
-            String hex = Integer.toHexString(0xff & b);
-            if(hex.length() == 1) hexString.append('0');
-            hexString.append(hex);
-        }
+public class Main 
         String digest = hexString.toString();
     }
 }
@@ -97,15 +82,7 @@ import (
     "encoding/hex"
 )
 
-func main() {
-    hmacKey := ""
-    message := ":"
-
-    hmac := hmac.New(sha256.New, []byte(hmacKey))
-    hmac.Write([]byte(message))
-    digestBytes := hmac.Sum(nil)
-    digest := hex.EncodeToString(digestBytes)
-}
+func main() 
 ```
 
 
@@ -162,4 +139,5 @@ Terapi will reject auth calls without a proper HMAC signature, so make sure your
 
 
 **Questions, problems, feedback?** Please reach out in the Slack community.
+
 

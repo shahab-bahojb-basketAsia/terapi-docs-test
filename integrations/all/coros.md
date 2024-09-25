@@ -29,3 +29,4 @@ Need guidance on setting up? Visit our community for support.
 - Coros offers a sandbox environment for testing. Make sure to create separate terapi integrations for both sandbox and production environments.
 
 Add Getting Started links and Gotchas by editing this page.
+

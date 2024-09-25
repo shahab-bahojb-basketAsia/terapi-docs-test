@@ -30,3 +30,4 @@ Need help getting started? Get help in the [community](https://terapi.dev/slack)
 -   Refresh tokens have a rolling expiry of 100 days. If 100 days pass, or your refresh token expires, users need to go through the authorization flow again and reauthorize your app.
 
 Add Getting Started links and Gotchas by [editing this page]()
+

@@ -29,7 +29,8 @@ Chargebee requires a user-specific subdomain for the API base URL.
 You should request this from the user and pass it to Terapi in the `terapi.auth()` call:
 
 ```js
-terapi.auth('chargebee', '', );
+terapi.auth('chargebee', '', });
 ```
 
 Add Connection configuration in Terapi by [editing this page](/integrate/guides/connect-an-api).
+

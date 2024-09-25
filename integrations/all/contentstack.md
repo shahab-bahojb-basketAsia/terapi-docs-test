@@ -33,11 +33,7 @@ Pass this information to terapi in the `terapi.auth()` call:
 
 ```js
 terapi.auth('contentstack', '',
-            {
-                params: {
-                    subdomain: 'app',
-                    appId: ''
-                }
+            
             });
 ```
 

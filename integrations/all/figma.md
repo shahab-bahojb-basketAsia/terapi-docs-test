@@ -33,3 +33,4 @@ If you get stuck, our community is always here to help.
 - Figma only supports the `file_read` scope, so ensure you configure your OAuth app accordingly.
 
 Add any additional links and gotchas by editing this page.
+

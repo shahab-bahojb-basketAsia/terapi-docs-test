@@ -31,3 +31,4 @@ Need help getting started? Get help in the [community](https://terapi.dev/slack)
 -   During the authorization flow, users need to manually select which scopes they grant to your application (from the ones you requested). They can complete the flow without granting all the requested scopes. The raw token response (which you can get from the Terapi backend SDK) contains the `scope` key that lists the granted scopes.
 
 Add Getting Started links and Gotchas by [editing this page](https://github.com/terapi/terapi/tree/master/docs-v2/integrations/all/fitbit.mdx)
+

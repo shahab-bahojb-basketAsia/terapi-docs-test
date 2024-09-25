@@ -28,7 +28,8 @@ Need help getting started? Get help in the [community](#).
 ## API gotchas
 
 - Freshsales uses API_KEY auth mode with `Authorization: Token token= API_KEY` as a request header.
-- When creating a connection, you need to add the subdomain as a connection configuration parameter, for example: `terapi.auth('freshsales', 'test-connection-id', )`.
+- When creating a connection, you need to add the subdomain as a connection configuration parameter, for example: `terapi.auth('freshsales', 'test-connection-id', })`.
 - Freshsales enforces rate limit on the account level. For more details check [freshsales rate limit](https://support.freshsales.io/en/support/solutions/articles/223406-does-freshsales-have-api-request-limits-for-an-account-)
 
 Add Getting Started links and Gotchas by [editing this page](#).
+

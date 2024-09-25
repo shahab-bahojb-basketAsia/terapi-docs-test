@@ -28,3 +28,4 @@ Need help getting started? Get help in the [community](#).
 -   Oauth related docs can be downloaded from the developer's [portal](https://developerportal.garmin.com/).
 
 Add Getting Started links and Gotchas by [editing this page](#).
+

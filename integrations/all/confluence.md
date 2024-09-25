@@ -32,3 +32,4 @@ Need help? Connect with our community to get the support you need.
 - Refresh tokens will expire after a year if unused, and after 90 days if the resource owner is inactive. Call `terapi.getConnection()` within this period to avoid expiration. For more details, check out the [token renewal guide](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#how-do-i-get-a-new-access-token--if-my-access-token-expires-or-is-revoked-).
 
 Add Getting Started links and Gotchas by editing this page.
+

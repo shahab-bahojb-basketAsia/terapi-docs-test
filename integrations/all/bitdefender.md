@@ -32,3 +32,4 @@ Do you need help? Please check this link.
 - Bitdefender enforces different rate limits for different API endpoints and methods. For more details, check [Bitdefender rate limits](https://www.bitdefender.com/business/support/en/77209-394430-api-rate-limits.html)
 
 Add Getting Started links and Gotchas by editing this page.
+

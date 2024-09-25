@@ -32,3 +32,4 @@ Need help getting started? Get help in the [community]().
 -   While setting up the OAuth credentials, the _Authorized JavaScript origins_ should be your site URL (`https://app.terapi.dev` if you're testing from the Terapi UI).
 
 Add Getting Started links and Gotchas by [editing this page]().
+

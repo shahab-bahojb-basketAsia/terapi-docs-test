@@ -29,3 +29,4 @@ For any setup issues or questions, the community is available for help.
 - Entrata uses Basic authentication to interact with its endpoints. The `username` and `password` needed are generated directly from the Entrata platform. Make sure to input these credentials correctly for seamless access to the API.
 
 Add any additional Getting Started links or Gotchas by editing this page.
+

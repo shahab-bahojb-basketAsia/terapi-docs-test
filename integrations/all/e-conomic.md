@@ -30,22 +30,12 @@ Need help getting started? Get help in the community.
 - After establishing a connection, use the Basic credentials as follows:
 ```js
 const connection = await terapi.getConnection();
-let headers: ;
-if ('username' in connection.credentials && 'password' in connection.credentials) {
-    headers = {
-        'X-AppSecretToken': connection.credentials.username,
-        'X-AgreementGrantToken': connection.credentials.password
-    };
-} else {
-    throw new terapi.ActionError({
-        message: `Basic API credentials are incomplete`
-    });
+let headers:  = ;
+if ('username' in connection.credentials && 'password' in connection.credentials) ;
+} else );
 }
 
-const resp = await terapi.get({
-    endpoint: '/customers',
-    headers: headers
-});
+const resp = await terapi.get();
 ```
 
 Add Getting Started links and Gotchas by editing this page.

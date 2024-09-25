@@ -31,3 +31,4 @@ If you need assistance getting started, feel free to ask in the community.
 - The available scopes depend on the Products or Partner Programs your app has access to.
 
 Your contributions to enhance this documentation are always welcome!
+

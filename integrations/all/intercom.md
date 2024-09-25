@@ -33,3 +33,4 @@ Need help getting started? Get help in the [community](https://terapi.dev/slack)
 -   You do not need to pass API scopes/permissions during the authorization request. Permissions are only set in the Intercom Developer Portal.
 
 Add Getting Started links and Gotchas by [editing this page]()
+

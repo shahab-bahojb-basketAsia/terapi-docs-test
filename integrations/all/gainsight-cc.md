@@ -31,3 +31,4 @@ Need help getting started? Get help in the [community](#).
 -   When creating a new connection in Terapi, please provide your `region`. You can find this under `API access information` in Control.
 
 Add Getting Started links and Gotchas by [editing this page](#).
+

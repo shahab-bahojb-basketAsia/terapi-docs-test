@@ -31,3 +31,4 @@ Need assistance? Join our community for help with setting up.
 - Currently, only DATEV partners or `DATEV Schnittstellenanbieter` can access the DATEV Online APIs. You will need a DATEV partner manager to register your application.
 
 Add Getting Started links and Gotchas by editing this page.
+

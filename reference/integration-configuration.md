@@ -269,9 +269,7 @@ models:
 
 Which translates to the following generated Typescript model:
 ```ts
-export interface Task {
-  gender: (PullRequest | Issues)[];
-}
+export interface Task 
 ```
 
 ### Reference other models
@@ -317,10 +315,7 @@ models:
 
 Which translates to the following generated Typescript model:
 ```ts
-export interface Task {
-  [key: string]: string;
-  id: string;
-}
+export interface Task 
 ```
 
 ### Optional property
@@ -398,4 +393,5 @@ If your app uses typescript, you can import these same models to enforce strong 
 
 
 **Questions, problems, feedback?** Please reach out in the [Slack community](https://nango.dev/slack).
+
 

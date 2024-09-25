@@ -30,3 +30,4 @@ Need help getting started? Get help in the [community](https://terapi.dev/slack)
 -  Jira Data Center enforces HTTPS for the base URL of production environments. You can use insecure URIs and base URLs for staging or development environments by enabling the relevant [system properties](https://confluence.atlassian.com/adminjiraserver/oauth-2-0-provider-system-properties-1115659073.html).
 
 Add Getting Started links and Gotchas by [editing this page]()
+

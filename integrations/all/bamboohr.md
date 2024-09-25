@@ -34,16 +34,10 @@ You should request this from the user and pass it to Terapi in the `terapi.auth(
 
 ```js
 // oAuth
-terapi.auth('bamboohr', '', );
+terapi.auth('bamboohr', '', });
 // API key
-terapi.auth('bamboohr-basic', '', {
-        credentials: {
-            username: '',
-            password: 'x'
-        },
-        params: {
-            subdomain: ''
-        }
+terapi.auth('bamboohr-basic', '', ,
+        params: 
     })
 ```
 

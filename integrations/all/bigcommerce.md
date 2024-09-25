@@ -34,27 +34,16 @@ Do you need help? Please check this link.
 ```js
 const connection = await terapi.getConnection();
 
-if (!connection.credentials || typeof connection.credentials !== 'object') {
-    throw new terapi.ActionError({
-        message: `credentials are missing or invalid`
-    });
+if (!connection.credentials || typeof connection.credentials !== 'object') );
 }
 
 let access_token: string;
-if ('access_token' in connection.credentials) {
-    access_token = connection.credentials.access_token;
-} else {
-    throw new terapi.ActionError({
-        message: `access_token is missing`
-    });
+if ('access_token' in connection.credentials)  else );
 }
 
-const config = {
-    endpoint: '/v2/orders',
-    headers: {
-        'X-Auth-Token': access_token
-    }
+const config = 
 };
 
 const response = await terapi.get(config);
 ```
+

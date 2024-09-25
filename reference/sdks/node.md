@@ -48,15 +48,7 @@ To handle rate limiting gracefully, clients should monitor for the 429 status co
 
 ```js
 // Example:
-try {
-    const res = await nango.listIntegrations();
-    ...
-} catch(err) {
-    if (err.response.status === 429) {
-        const retryAfter = err.response.headers['retry-after'];
-        // wait and retry
-        ...
-    }
+try  catch(err) 
     ...
 }
 ```
@@ -75,15 +67,7 @@ await nango.listProviders()
 
 
 ```json
-{
-    "data": [
-        {
-            "name": "posthog",
-            "categories": ["dev-tools"],
-            "auth_mode": "API_KEY",
-            "proxy": {
-                "base_url": "https://api.posthog.com",
-            },
+,
             "docs": "https://docs.nango.dev/integrations/all/posthog"
         }
     ]
@@ -104,14 +88,7 @@ await nango.getProvider()
 
 
 ```json
-{
-    "data": {
-        "name": "posthog",
-        "categories": ["dev-tools"],
-        "auth_mode": "API_KEY",
-        "proxy": {
-            "base_url": "https://api.posthog.com",
-        },
+,
         "docs": "https://docs.nango.dev/integrations/all/posthog"
     }
 }
@@ -132,22 +109,8 @@ await nango.listIntegrations()
 
 
 ```json
-{
-    "configs": [
-        {
-            "unique_key": "slack-nango-community",
-            "provider": "slack",
-            "logo": "http://localhost:3003/images/template-logos/slack.svg",
-            "created_at": "2023-10-16T08:45:26.241Z",
-            "updated_at": "2023-10-16T08:45:26.241Z",
-        },
-        {
-            "unique_key": "github-prod",
-            "provider": "github",
-            "logo": "http://localhost:3003/images/template-logos/github.svg",
-            "created_at": "2023-10-16T08:45:26.241Z",
-            "updated_at": "2023-10-16T08:45:26.241Z",
-        },
+,
+        ,
     ]
 }
 ```
@@ -187,14 +150,7 @@ await nango.getIntegration();
 
 
 ```json
-{
-    "data": {
-        "unique_key": "slack-nango-community",
-        "provider": "slack",
-        "logo": "http://localhost:3003/images/template-logos/slack.svg",
-        "created_at": "2023-10-16T08:45:26.241Z",
-        "updated_at": "2023-10-16T08:45:26.241Z",
-    }
+
 }
 ```
 
@@ -243,11 +199,7 @@ await nango.createIntegration(, );
 
 
 ```json
-{
-    "config": {
-        "unique_key": "slack-nango-community",
-        "provider": "slack"
-    }
+
 }
 ```
 
@@ -296,11 +248,7 @@ await nango.updateIntegration(, );
 
 
 ```json
-{
-    "config": {
-        "unique_key": "slack-nango-community",
-        "provider": "slack"
-    }
+
 }
 ```
 
@@ -325,11 +273,7 @@ await nango.deleteIntegration();
 
 
 ```json
-{
-    "config": {
-        "unique_key": "slack-nango-community",
-        "provider": "slack"
-    }
+
 }
 ```
 
@@ -356,25 +300,8 @@ await nango.listConnections();
 
 
 ```json
-{
-    "connections": [
-        {
-            "id": 1,
-            "connection_id": "test-1",
-            "provider": "slack",
-            "provider_config_key": "slack-nango-community",
-            "created": "2023-06-03T14:53:22.051Z",
-            "metadata": null
-        },
-        {
-            "id": 2,
-            "connection_id": "test-2",
-            "provider": "slack",
-            "provider_config_key": "slack-nango-community",
-            "created": "2023-06-03T15:00:14.945Z",
-            "metadata": {
-            "bot_id": "some-uuid"
-            }
+,
+        
         }
     ]
 }
@@ -422,34 +349,11 @@ We recommend not caching tokens for longer than 5 minutes to ensure they are fre
 
 
 ```json
-{
-    "id": 18393,
-    "created_at": "2023-03-08T09:43:03.725Z",
-    "updated_at": "2023-03-08T09:43:03.725Z",
-    "provider_config_key": "github",
-    "connection_id": "1",
-    "credentials": {
-        "type": "OAUTH2",
-        "access_token": "gho_tsXLG73f....",
-        "refresh_token": "gho_fjofu84u9....",
-        "expires_at": "2024-03-08T09:43:03.725Z",
-        "raw": { // Raw token response from the OAuth provider: Contents vary!
-            "access_token": "gho_tsXLG73f....",
-            "refresh_token": "gho_fjofu84u9....",
-            "token_type": "bearer",
-            "scope": "public_repo,user"
-        }
+
     },
-    "connection_config": {
-        "subdomain": "myshop",
-        "realmId": "XXXXX",
-        "instance_id": "YYYYYYY"
-    },
+    "connection_config": ,
     "account_id": 0,
-    "metadata": {
-        "myProperty": "yes",
-        "filter": "closed=true"
-    }
+    "metadata": 
 }
 ```
 
@@ -465,9 +369,7 @@ await nango.getMetadata('', 'CONNECTION-ID');
 If you know the structure of the metadata, you can specify a type;
 
 ```ts
-interface CustomMetadata {
-    anyKey: Record;
-}
+interface CustomMetadata 
 const myTypedMetadata = await nango.getMetadata('', '');
 ```
 
@@ -487,9 +389,7 @@ const myTypedMetadata = await nango.getMetadata('', '');
 
 
 ```json
-{
-    "custom_key1": "custom_value1"
-}
+
 ```
 
 
@@ -524,12 +424,7 @@ await nango.setMetadata('', ['CONNECTION-ID', 'CONNECTION-ID-TWO'], );
 
 
 ```json
-{
-    "connection_id": "",
-    "provider_config_key": "",
-    "metadata": {
-        "CUSTOM_KEY1": "CUSTOM_VALUE1"
-    }
+
 }
 ```
 
@@ -565,12 +460,7 @@ await nango.updateMetadata('', ['CONNECTION-ID', 'CONNECTION-ID-TWO'], );
 
 
 ```json
-{
-    "connection_id": "",
-    "provider_config_key": "",
-    "metadata": {
-        "CUSTOM_KEY1": "CUSTOM_VALUE1"
-    }
+
 }
 ```
 
@@ -615,60 +505,17 @@ const scriptsConfig = await nango.getScriptsConfig();
 
 ```json
 [
-    {
-        "providerConfigKey": "demo-github-integration",
-        "syncs": [
-            {
-                "name": "github-issue-example",
-                "type": "sync",
-                "models": [
-                    {
-                        "name": "GithubIssue",
-                        "fields": [
-                            {
-                                "name": "id",
-                                "type": "integer"
-                            },
-                            {
-                                "name": "owner",
-                                "type": "string"
-                            },
-                            {
-                                "name": "repo",
-                                "type": "string"
-                            },
-                            {
-                                "name": "issue_number",
-                                "type": "number"
-                            },
-                            {
-                                "name": "title",
-                                "type": "string"
-                            },
-                            {
-                                "name": "author",
-                                "type": "string"
-                            },
-                            {
-                                "name": "author_id",
-                                "type": "string"
-                            },
-                            {
-                                "name": "state",
-                                "type": "string"
-                            },
-                            {
-                                "name": "date_created",
-                                "type": "date"
-                            },
-                            {
-                                "name": "date_last_modified",
-                                "type": "date"
-                            },
-                            {
-                                "name": "body",
-                                "type": "string"
-                            }
+    ,
+                            ,
+                            ,
+                            ,
+                            ,
+                            ,
+                            ,
+                            ,
+                            ,
+                            ,
+                            
                         ]
                     }
                 ],
@@ -690,66 +537,24 @@ const scriptsConfig = await nango.getScriptsConfig();
                     "public_repo"
                 ],
                 "endpoints": [
-                    {
-                        "GET": "/github/issue-example"
-                    }
+                    
                 ],
                 "nango_yaml_version": "v2",
                 "webhookSubscriptions": []
             }
         ],
         "actions": [
-            {
-                "name": "fetch-issues",
-                "type": "action",
-                "models": [
-                    {
-                        "name": "GithubIssue",
-                        "fields": [
-                            {
-                                "name": "id",
-                                "type": "integer"
-                            },
-                            {
-                                "name": "owner",
-                                "type": "string"
-                            },
-                            {
-                                "name": "repo",
-                                "type": "string"
-                            },
-                            {
-                                "name": "issue_number",
-                                "type": "number"
-                            },
-                            {
-                                "name": "title",
-                                "type": "string"
-                            },
-                            {
-                                "name": "author",
-                                "type": "string"
-                            },
-                            {
-                                "name": "author_id",
-                                "type": "string"
-                            },
-                            {
-                                "name": "state",
-                                "type": "string"
-                            },
-                            {
-                                "name": "date_created",
-                                "type": "date"
-                            },
-                            {
-                                "name": "date_last_modified",
-                                "type": "date"
-                            },
-                            {
-                                "name": "body",
-                                "type": "string"
-                            }
+            ,
+                            ,
+                            ,
+                            ,
+                            ,
+                            ,
+                            ,
+                            ,
+                            ,
+                            ,
+                            
                         ]
                     }
                 ],
@@ -766,9 +571,7 @@ const scriptsConfig = await nango.getScriptsConfig();
                 "scopes": [],
                 "input": ,
                 "endpoints": [
-                    {
-                        "GET": "/github/issues"
-                    }
+                    
                 ],
                 "nango_yaml_version": "v2"
             }
@@ -789,11 +592,7 @@ Returns the synced data.
 ```ts
 import type  from '/models'
 
-const records = await nango.listRecords({
-    providerConfigKey: '',
-    connectionId: '',
-    model: ''
-});
+const records = await nango.listRecords();
 ```
 
 
@@ -856,19 +655,7 @@ This endpoint returns a list of records, ordered by modification date ascending.
 
 
 ```json
-{
-    records:
-        [
-            {
-                id: 123,
-                ..., // Fields as specified in the model you queried
-                _nango_metadata: {
-                    deleted_at: null,
-                    last_action: 'ADDED',
-                    first_seen_at: '2023-09-18T15:20:35.941305+00:00',
-                    last_modified_at: '2023-09-18T15:20:35.941305+00:00',
-                    cursor: 'MjAyNC0wMi0yNlQwMzowMDozOS42MjMzODgtMDU6MDB8fGVlMDYwM2E1LTEwNDktNDA4Zi05YTEwLTJjNzVmNDkwODNjYQ=='
-                }
+
             },
             ...
         ],
@@ -981,17 +768,7 @@ await nango.syncStatus('', ['SYNC_NAME1', 'SYNC_NAME2'], '')
 
 
 ```json
-{
-    "syncs": [
-        {
-            "id": "",
-            "name": "",
-            "status": "RUNNING",
-            "type": "INCREMENTAL",
-            "finishedAt": "",
-            "nextScheduledSyncAt": "",
-            "frequency": "",
-            "latestResult": 
+
         }
     ]
 }
@@ -1027,9 +804,7 @@ await nango.updateSyncConnectionFrequency('', 'SYNC_NAME', '', '')
 
 
 ```json
-{
-    "frequency": ""
-}
+
 ```
 
 
@@ -1050,10 +825,7 @@ No parameters.
 
 ```json
 [
-    {
-        "name": "MY_SECRET_KEY",
-        "value": "SK_373892NSHFNCOWFO..."
-    }
+    
 ]
 ```
 
@@ -1089,9 +861,7 @@ await nango.triggerAction('', '', '', );
 
 
 ```json
-{
-    "your-properties": "The data returned by the action"
-}
+
 ```
 
 
@@ -1100,11 +870,7 @@ await nango.triggerAction('', '', '', );
 Makes an HTTP request using the [proxy](/understand/concepts/proxy):
 
 ```js
-const config = {
-    endpoint: '/some-endpoint',
-    providerConfigKey: '',
-    connectionId: ''
-};
+const config = ;
 
 await nango.get(config); // GET request
 await nango.post(config); // POST request
@@ -1167,4 +933,5 @@ The response from the external API is passed back to you exactly as Nango gets i
 
 
 **Questions, problems, feedback?** Please reach out in the [Slack community](https://nango.dev/slack).
+
 

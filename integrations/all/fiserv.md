@@ -34,3 +34,4 @@ Need help getting started? Get help in the [community](https://terapi.dev/slack)
 - To obtain the Fiserv `hostUrl`, navigate to the API key section of your workspace. If your `hostUrl` from Fiserv is `https://card-sandbox.api.fiservapps.com`, add your `hostUrl` in terapi as `card-sandbox.api.fiservapps.com`. For more details check the [request URL](https://developer.fiserv.com/product/BankingHub/docs/?path=docs/get-started.md&branch=main#request-url).
 
 Add Getting Started links and Gotchas by [editing this page](https://github.com/terapihq/terapi/tree/master/docs-v2/integrations/all/fiserv.mdx)
+

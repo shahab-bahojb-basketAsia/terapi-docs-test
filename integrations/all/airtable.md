@@ -31,3 +31,4 @@ Do you need help? Please check this link.
 -   Refresh tokens expire after 60 days of inactivity. Ensure you use `terapi.getConnection()` at least every 60 days to renew the token.
 
 Add Getting Started links and Gotchas by editing this page.
+

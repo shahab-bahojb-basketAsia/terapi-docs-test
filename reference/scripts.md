@@ -12,15 +12,10 @@ icon: 'code'
 ```ts
 import type  from '../../models';
 
-export default async function fetchData(nango: NangoSync) {
-    // Fetch issues from GitHub.
-    const res = await nango.get({
-        endpoint: '/repos/NangoHQ/interactive-demo/issues?labels=demo&sort=created&direction=asc'
-    });
+export default async function fetchData(nango: NangoSync) );
 
     // Map issues to your preferred schema.
-    const issues: GithubIssueDemo[] = res.data.map((: any) => {
-        return ;
+    const issues: GithubIssueDemo[] = res.data.map((: any) => ;
     });
 
     // Persist issues to the Nango cache.
@@ -33,12 +28,7 @@ export default async function fetchData(nango: NangoSync) {
 ```ts
 import type  from '../../models';
 
-export default async function runAction(nango: NangoAction, input: GithubCreateIssueInput): Promise {
-    // Create a GitHub issue.
-    const res = await nango.post({
-        endpoint: '/repos/NangoHQ/interactive-demo/issues',
-        data: {
-            title: `[demo] $`,
+export default async function runAction(nango: NangoAction, input: GithubCreateIssueInput): Promise `,
             body: `The body of the issue.`,
             labels: ['automatic']
         }
@@ -113,8 +103,7 @@ Note that all HTTP requests benefit from automatic credential injection. Because
 
 
 ```json
-    {
-        data: , // the response provided by the server
+    , // the response provided by the server
         status: 200, // the HTTP status code
         headers: , // the HTTP headers
         config: , // the config provided for the request
@@ -159,10 +148,7 @@ No parameters.
 
 ```json
 [
-    {
-        "name": "MY_SECRET_KEY",
-        "value": "SK_373892NSHFNCOWFO..."
-    }
+    
 ]
 ```
 
@@ -192,9 +178,7 @@ await nango.triggerAction('', );
 
 
 ```json
-{
-    "your-properties": "The data returned by the action"
-}
+
 ```
 
 
@@ -215,9 +199,7 @@ await nango.getMetadata();
 Better, you can specify the type of the metadata;
 
 ```ts
-interface CustomMetadata {
-    anyKey: Record;
-}
+interface CustomMetadata 
 const myTypedMetadata = await nango.getMetadata();
 ```
 
@@ -229,9 +211,7 @@ No parameters.
 
 
 ```json
-{
-    "custom_key1": "custom_value1"
-}
+
 ```
 
 
@@ -308,34 +288,11 @@ We recommend not caching tokens for longer than 5 minutes to ensure they are fre
 
 
 ```json
-{
-    "id": 18393,                                 
-    "created_at": "2023-03-08T09:43:03.725Z",     
-    "updated_at": "2023-03-08T09:43:03.725Z",     
-    "provider_config_key": "github",              
-    "connection_id": "1",                         
-    "credentials": {
-        "type": "OAUTH2",                         
-        "access_token": "gho_tsXLG73f....",       
-        "refresh_token": "gho_fjofu84u9....",     
-        "expires_at": "2024-03-08T09:43:03.725Z", 
-        "raw": { // Raw token response from the OAuth provider: Contents vary!
-            "access_token": "gho_tsXLG73f....",
-            "refresh_token": "gho_fjofu84u9....",
-            "token_type": "bearer",
-            "scope": "public_repo,user"
-        }
+
     },
-    "connection_config": {                       
-        "subdomain": "myshop",
-        "realmId": "XXXXX",
-        "instance_id": "YYYYYYY"
-    },                      
+    "connection_config": ,                      
     "account_id": 0,                              
-    "metadata": {                                 
-        "myProperty": "yes",
-        "filter": "closed=true"
-    }
+    "metadata": 
 }                              
 ```
 
@@ -398,21 +355,14 @@ await nango.batchDelete(githubIssuesToDelete, 'GitHubIssue');
 You can use `ActionError` in an action script to return a descriptive error to your app when needed:
 ```ts
 
-export default async function runAction(nango: NangoAction): Promise {
-    // Something went wrong...
-
-    throw new ActionError();
+export default async function runAction(nango: NangoAction): Promise );
 }
 
 ```
 
 In this case, the response to the trigger action call will be: 
 ```json
-{
-  "error_type": "action_script_failure",
-  "payload": {
-    "any_key": "any_value"
-  }
+
 }
 ```
 
@@ -427,11 +377,7 @@ directory and can be imported in the following way:
 import type  from '../../models';
 import  from '../mappers/issue-mappper';
 
-export default async function fetchData(nango: NangoSync) {
-    // Fetch issues from GitHub.
-    const res = await nango.get({
-        endpoint: '/repos/NangoHQ/interactive-demo/issues?labels=demo&sort=created&direction=asc'
-    });
+export default async function fetchData(nango: NangoSync) );
 
     // Persist issues to the Nango cache.
     await nango.batchSave(issueMapper(res.data), 'GithubIssueDemo');

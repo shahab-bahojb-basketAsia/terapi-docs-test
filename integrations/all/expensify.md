@@ -32,30 +32,13 @@ Need help? Join the community to get assistance with setup.
 ```js
 const connection = await terapi.getConnection();
 let credentials = ;
-if ('username' in connection.credentials && 'password' in connection.credentials) {
-    credentials = {
-        partnerUserID: connection.credentials.username,
-        partnerUserSecret: connection.credentials.password,
-    };
-} else {
-    throw new terapi.ActionError({
-        message: `Basic API credentials are incomplete`
-    });
+if ('username' in connection.credentials && 'password' in connection.credentials) ;
+} else );
 }
-const postData = 'requestJobDescription=' + encodeURIComponent(JSON.stringify({
-    type: input.requestJobDescription.type,
-    credentials: credentials,
-    inputSettings: {
-        type: input.inputSettings.type
-    }
+const postData = 'requestJobDescription=' + encodeURIComponent(JSON.stringify(
 }));
 
-const resp = await terapi.post({
-    baseUrlOverride: `https://integrations.expensify.com/Integration-Server`,
-    endpoint: `/ExpensifyIntegrations`,
-    headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-    },
+const resp = await terapi.post(,
     data: postData,
 });
 ```

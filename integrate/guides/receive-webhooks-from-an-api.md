@@ -35,13 +35,7 @@ Terapi automatically forwards all webhooks from external APIs to your app.
 
 Terapi webhook forwards are POST requests with the following JSON body:
 ```json
-{
-   "from": "hubspot",
-   "type": "forward",
-   "connectionId": "",
-   "providerConfigKey": "",
-   "payload": ... // Raw payload from Hubspot webhook
-}
+
 ```
 
 # Handle external webhooks in syncs
@@ -52,12 +46,7 @@ Webhook-enabled syncs process relevant webhooks, resulting in the creation, upda
 
 Each modified record (following an external webhook) will trigger a separate webhook from Terapi to your app. The POST request has the following body:
 ```json
-{
-    "connectionId": "",
-    "providerConfigKey": "",
-    "syncName": "",
-    "model": "",
-    "responseResults": ,
+,
     "syncType": "WEBHOOK",
     "modifiedAfter": ""
 }
@@ -69,4 +58,5 @@ You can check if a sync supports external webhooks by selecting your integration
 
 
 **Questions, problems, feedback?** Please reach out in the Slack community.
+
 

@@ -12,3 +12,4 @@ The simplest way to experience Terapi is to sign up for a free account and compl
 
 **Questions, problems, feedback?** Please reach out in the Slack community.
 
+

@@ -29,13 +29,7 @@ As datasets grow, full refresh syncs become less efficient, potentially triggeri
 Example of a full refresh sync script:
 
 ```ts
-export default async function fetchData(terapi: TerapiSync) {
-    // ... (pagination logic)
-    while (nextPage) {
-        const res = getUsersFromExternalAPI(nextPage);
-        // ... (process response)
-        await terapi.batchSave(mapUsers(res.data.members), 'User');
-    }
+export default async function fetchData(terapi: TerapiSync) 
 }
 ```
 
@@ -48,13 +42,7 @@ Sync scripts provide access to the timestamp of the last sync execution via `ter
 Example of an incremental sync script:
 
 ```ts
-export default async function fetchData(terapi: TerapiSync) {
-    // ... (pagination logic)
-    while (nextPage) {
-        const res = getContactsFromExternalAPI(terapi.lastSyncDate, nextPage);
-        // ... (process response)
-        await terapi.batchSave(mapContacts(res.data.records), 'Contact');
-    }
+export default async function fetchData(terapi: TerapiSync) 
 }
 ```
 
@@ -67,13 +55,7 @@ The first sync execution will still need to fetch all historical data, which can
 To avoid memory-related issues in integration scripts, it's crucial to save data incrementally rather than accumulating large amounts in memory:
 
 ```ts
-export default async function fetchData(terapi: TerapiSync) {
-    // ... (pagination logic)
-    while (nextPage) {
-        const res = getContactsFromExternalAPI(terapi.lastSyncDate, nextPage);
-        // ... (process response)
-        await terapi.batchSave(mapContacts(res.data.records), 'Contact');
-    }
+export default async function fetchData(terapi: TerapiSync) 
 }
 ```
 
@@ -85,4 +67,5 @@ This approach allows you to sync additional data later by modifying your script 
 
 
 For further assistance or questions, please reach out to our community support channels.
+
 

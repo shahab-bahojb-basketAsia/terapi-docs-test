@@ -29,3 +29,4 @@ Need help getting started? Get help in the community.
 - Since the platform automatically sets the `Accept: application/json` header, there is no need to include the `.json` suffix in API endpoint URLs. For example, instead of sending a request to `/categories.json`, you can send it to `/categories`, and the JSON response will still be returned.
 
 Add Getting Started links and Gotchas by editing this page.
+

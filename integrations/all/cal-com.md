@@ -31,3 +31,4 @@ Do you need help? Please check this link.
 - Cal.com offers two versions of their API: the legacy version [V1](https://cal.com/docs/enterprise-features/api/api-reference/v1) and the latest [V2](https://api.cal.com/v2/docs), each with different methods for passing the API key.
 
 Add Getting Started links and Gotchas by editing this page.
+

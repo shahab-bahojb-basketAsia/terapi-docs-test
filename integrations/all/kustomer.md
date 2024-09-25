@@ -33,3 +33,4 @@ If you require assistance while getting started, don't hesitate to ask in the co
 - Different domain extensions are used for various regions; for example, `api` for US-hosted customers and `api.prod2` for EU-based clients.
 
 Your contributions to enhance this documentation are always welcome.
+

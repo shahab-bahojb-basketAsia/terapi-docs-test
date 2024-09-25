@@ -32,3 +32,4 @@ If you require help while getting started, feel free to ask in the community.
 - For specifics on rate limits, refer to the [Rate Limiting Guide](https://docs.lessonly.com/#rate-limiting).
 
 Contributions to enhance this documentation are always welcome.
+

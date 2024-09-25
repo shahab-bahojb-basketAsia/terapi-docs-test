@@ -35,10 +35,7 @@ Need help getting started? Get help in the [community](https://terapi.dev/slack)
 -   You will need to fetch your Cloud ID to be able to make API requests to the Jira API v3. You can do this with the proxy by calling:
 
 ```ts
-const response = await terapi.get({
-    endpoint: `oauth/token/accessible-resources`,
-    baseUrlOverride: 'https://api.atlassian.com'
-});
+const response = await terapi.get();
 const cloudId = response.data[0].id;
 ```
 

@@ -32,3 +32,4 @@ If you have questions as you get started, feel free to seek assistance in the co
 - Rate limits are enforced based on your subscribed plan. For detailed information, consult the section on [Klipfolio rate limits](https://apidocs.klipfolio.com/reference/getting-started#rate-limiting).
 
 You can help improve this documentation by contributing edits.
+

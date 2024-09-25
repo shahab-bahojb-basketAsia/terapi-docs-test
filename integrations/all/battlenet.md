@@ -32,7 +32,7 @@ Battlenet uses different domain extensions for different regions.
 You need to pass the domain extension to use to Terapi in the `terapi.auth()` call:
 
 ```js
-terapi.auth('battlenet', '', );
+terapi.auth('battlenet', '', });
 ```
 
 Add Connection configuration in Terapi by editing this page.

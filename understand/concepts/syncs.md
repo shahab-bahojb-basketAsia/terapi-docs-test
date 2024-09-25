@@ -69,13 +69,7 @@ Sync scripts have the following structure:
 ```typescript
 import type  from '../../models';
 
-export default async function fetchData(nango: NangoSync): Promise {
-    const records: ResponseModel[] = [];
-
-    // Your integration code goes here.
-
-    await nango.batchSave(records, 'ResponseModel');
-}
+export default async function fetchData(nango: NangoSync): Promise 
 ```
 
 The `fetchData` function starts on the schedule indicated in your [integration configuration](/understand/concepts/scripts#integration-configuration). The `ResponseModel` is configurable via the integration configuration and is auto-imported into your integration script.

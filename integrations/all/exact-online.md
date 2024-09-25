@@ -31,7 +31,7 @@ Exact Online uses region-specific domain extensions.
 You need to pass the region's domain extension to Terapi in the `terapi.auth()` call:
 
 ```js
-terapi.auth('exact-online', '', );
+terapi.auth('exact-online', '', });
 ```
 
 Add Connection configuration in Terapi by editing this page.

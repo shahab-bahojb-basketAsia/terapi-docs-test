@@ -34,3 +34,4 @@ Need help getting started? Get help in the [community](https://terapi.dev/slack)
 -   The App Type determines the accessibility and visibility of your application. A public app is available for anyone to use and access, while a private app is restricted to a specific group or individuals and is not publicly listed in the marketplace. For more details, check the profile information documentation.
 
 Add Getting Started links and Gotchas by [editing this page]()
+

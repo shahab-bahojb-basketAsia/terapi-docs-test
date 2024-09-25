@@ -29,3 +29,4 @@ Need help getting started? Get help in the community.
 -   When setting up your application in the App Console, make sure to select the necessary permissions in the ‘Permissions’ tab.
 
 Add Getting Started links and Gotchas by editing this page.
+

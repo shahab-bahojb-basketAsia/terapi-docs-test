@@ -33,3 +33,4 @@ Do you need help? Please check this link.
 - For rate limit information, see the [Affinity documentation](https://api-docs.affinity.co/#rate-limits).
 
 Add Getting Started links and Gotchas by editing this page.
+

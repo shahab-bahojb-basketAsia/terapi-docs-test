@@ -30,3 +30,4 @@ Join our developer community to get answers and tips from peers and experts.
 -   Scopes are not necessary during the authorization process, so you can skip including them.
 
 Add Getting Started links and Gotchas by editing this page.
+

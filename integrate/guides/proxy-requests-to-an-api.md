@@ -16,31 +16,13 @@ Here is an example of how to query external APIs with the proxy, using the SDK a
 
 
 ```typescript
-try {
-    const res = await terapi.proxy({
-        method: 'POST',
-        baseUrlOverride: 'https://api.example.com',
-        endpoint: '/external-endpoint',
-        providerConfigKey: '',
-        connectionId: '',
-        retries: 5, // Retries with exponential backoff (optional, default 0)
-        data: {
-            id: 1,
-            colorId: 'blue',
-            selected: true
-        }
+try 
     });
 
     // Response was 200!
     // See https://axios-http.com/docs/res_schema
     console.log(res.data);
-} catch (error) {
-    // Status of response != 200
-    // See https://axios-http.com/docs/handling_errors
-    console.log(error.response.data);
-    console.log(error.response.status);
-    console.log(error.response.headers);
-}
+} catch (error) 
 ```
 
 
@@ -61,4 +43,5 @@ curl -X POST -H 'Content-Type: application/json' \
 
 
 **Questions, problems, feedback?** Please reach out in the Slack community.
+
 

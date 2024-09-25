@@ -27,6 +27,7 @@ If you need any missing features, feel free to request them through our support 
 Connect with developers and explore more solutions in our community.
 
 ## API gotchas
-- When you create a new application, a token URL is generated that includes essential terapi connection parameters. It follows this format: `https://$/oauth2/token`. These values should be included when setting up a new connection.
+- When you create a new application, a token URL is generated that includes essential terapi connection parameters. It follows this format: `https://$.$.authz.cloudentity.io//$/oauth2/token`. These values should be included when setting up a new connection.
 
 Add Getting Started links and Gotchas by editing this page.
+

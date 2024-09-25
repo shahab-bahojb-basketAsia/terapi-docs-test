@@ -29,3 +29,4 @@ Join our community to find quick answers and share experiences with other develo
 - Clari Copilot requires API authentication using both an `API Key` and an `API Secret`. You need to include `X-Api-Key` for the key and `X-Api-Password` for the secret in the request headers for proper authentication.
 
 Add Getting Started links and Gotchas by editing this page.
+

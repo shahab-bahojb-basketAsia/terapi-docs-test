@@ -34,3 +34,4 @@ Need help getting started? Get help in the [community]().
 - If you need to use the proxy, it is important to provide the resource that you will be calling in the config (as Greenhouse has many forms for API resources). Please see [here](https://developers.greenhouse.io/) for different types of resources. Once confirmed, you have to add `resource` as a config.
 
 Add Getting Started links and Gotchas by [editing this page]().
+

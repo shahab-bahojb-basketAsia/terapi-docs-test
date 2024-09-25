@@ -36,46 +36,12 @@ Terapi's pre-built Google Drive integration only syncs whitelisted files & folde
 
     Example code:
     ```js
-    const ingest = async () => {
-        let filesIds = [];      
-        
-        const cid = generateCid(); // generate a unique id for the connection
-
-        try {
-            const auth = await yourAuthFunction('google-drive', cid);
-            if (auth.connectionId) {
-                filesIds = await openGooglePicker();
-                if (filesIds.length === 0) {
-                    return;
-                }
+    const ingest = async () => 
             }
-        } catch (error) {
-            // handle error
-        }
+        } catch (error) 
     }
 
-    const openGooglePicker = async () => {
-        return new Promise((resolve, reject) => {
-            openPicker({
-                appId: , // essential for keeping same file id between your app and Google
-                clientId: ,
-                developerKey: ,
-                viewId: 'DOCS',
-                showUploadView: true,
-                showUploadFolders: true,
-                supportDrives: true,
-                multiselect: true,
-                setIncludeFolders: true,
-                setSelectFolderEnabled: true,
-                callbackFunction: (data) => {
-                    if (data.action === 'cancel') {
-                        handleCancel();
-                        resolve([]);
-                        return;
-                    } else if (data.action == 'picked') {
-                        const fileIds = data.docs.map((doc) => doc.id);
-                        resolve(fileIds);
-                    }
+    const openGooglePicker = async () =>  else if (data.action == 'picked') 
                 }
             });
         });
@@ -95,10 +61,7 @@ Terapi's pre-built Google Drive integration only syncs whitelisted files & folde
     await updateMetadata(
         'google-drive',
         'CONNECTION-ID',
-        {
-            'folders': ['', ...],
-            'files': ['', ...] 
-        }
+        
     );
     ```
   
@@ -114,3 +77,4 @@ Terapi's pre-built Google Drive integration only syncs whitelisted files & folde
     - The only exception is the `drive.file` scope, which lets your app access files & folders the user has previously authorized with the Google Drive Picker API.
 
 Add Getting Started links and Gotchas by editing this page.
+
