@@ -6,9 +6,7 @@ description: 'Simplify your API integrations with one unified platform.'
 
 Terapi revolutionizes the way you handle external APIs by providing a single, powerful interface for all your integration needs.
 
-<Frame caption="Streamline your integrations with Terapi">
-  <img src="/images/terapi-overview.png" />
-</Frame>
+![Streamline your integrations with Terapi](/images/terapi-overview.png)
 
 # 🚀 Quick Start
 
@@ -57,17 +55,13 @@ Remember, Terapi is designed to work with any API, giving you unlimited integrat
 
 # 🎥 See Terapi in Action
 
-<div style={{position: 'relative', overflow: 'hidden', paddingTop: '56.25%'}}>
-    <iframe style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} src="https://www.terapi-demo-video.com/embed"></iframe>
-</div>
+[Watch the demo video](https://www.terapi-demo-video.com/embed)
 
 # 🏁 Begin Your Journey
 
 Start your free trial and explore our interactive demo:
 
-<a href="https://app.terapi.dev/trial" target="_blank">
-  <img alt="Try Terapi Today" src="/images/terapi-start-button.svg" noZoom />
-</a>
+[![Try Terapi Today](/images/terapi-start-button.svg)](https://app.terapi.dev/trial)
 
 # 💡 The Power of Open Source
 
@@ -82,3 +76,4 @@ We believe in the collective power of the developer community. By making Terapi 
 - [Terapi Integration Guide](/docs/integration-guide)
 - [Join Our Community Forum](https://community.terapi.dev)
 - [Schedule a Consultation](https://terapi.dev/consultation)
+
