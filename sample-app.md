@@ -16,8 +16,14 @@ Jumpstart your integration with Terapi by exploring our sample application, whic
 
 ## Access the repository
 
-[![TerapiHQ/sample-app](https://github.com/favicon.ico)](https://github.com/TerapiHQ/sample-app)
 
-## Tip
+  
+    
+  
+  TerapiHQ/sample-app
+
+
+
 
 **Questions, problems, feedback?** Please reach out in the Slack community.
+

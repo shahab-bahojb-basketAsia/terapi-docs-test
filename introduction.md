@@ -6,7 +6,9 @@ description: 'Simplify your API integrations with one unified platform.'
 
 Terapi revolutionizes the way you handle external APIs by providing a single, powerful interface for all your integration needs.
 
-![Streamline your integrations with Terapi](/images/terapi-overview.png)
+
+  
+
 
 # 🚀 Quick Start
 
@@ -19,7 +21,7 @@ terapi.auth('provider-name', 'user-identifier');
 Retrieve structured data from external APIs in your backend:
 
 ```ts
-terapi.fetchData<ProviderDataType>({
+terapi.fetchData({
     provider: 'provider-name',
     userId: 'user-identifier',
     dataModel: 'DesiredDataType',
@@ -55,13 +57,17 @@ Remember, Terapi is designed to work with any API, giving you unlimited integrat
 
 # 🎥 See Terapi in Action
 
-[Watch the demo video](https://www.terapi-demo-video.com/embed)
+
+    
+
 
 # 🏁 Begin Your Journey
 
 Start your free trial and explore our interactive demo:
 
-[![Try Terapi Today](/images/terapi-start-button.svg)](https://app.terapi.dev/trial)
+
+  
+
 
 # 💡 The Power of Open Source
 
@@ -76,4 +82,3 @@ We believe in the collective power of the developer community. By making Terapi 
 - [Terapi Integration Guide](/docs/integration-guide)
 - [Join Our Community Forum](https://community.terapi.dev)
 - [Schedule a Consultation](https://terapi.dev/consultation)
-
